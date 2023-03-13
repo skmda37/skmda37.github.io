@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Personal Website</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: white;
+			color: black;
+			text-align: center;
+			padding: 20px;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin: 0;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.aboutme {
+			padding: 20px;
+			max-width: 800px;
+			margin: 0 auto;
+		}
+                .publication_header {
+                        padding: 20px;
+                        max-width: 800px;
+                        margin: 0 auto;
+                }
+
+		h2 {
+			font-size: 24px;
+			margin-top: 0;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			margin-bottom: 10px;
+		}
+                .my-image {
+                        width: 100%;
+                        height: auto;
+                }
+                .publication {
+                        width: 800px;
+                }
+
+                .publication img {
+                        float: left;
+                            margin-right: 20px;
+                            margin-left: 20px;
+                }
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Stefan Kolek</h1>
+		<p>Deep Learning Researcher</p>
+		<img src="./imgs/test3.png" alt="My painting" class="my-image">
+	</header>
+	<section class='aboutme'>
+		<h2>About Me</h2>
+		<p>Insert your personal information here. I am Stefan Kolek. I am currently doing my PhD at the Ludwig-Maximilians Universit&auml;t M&uuml;nchen. My research is on Interpretable Deep Learning.</p>
+
+		<h2>CV</h2>
+		<ul>
+			<li>Insert your CV items here.</li>
+		</ul>
+
+
+
+        
+	</section>
+        <section>
+
+        <h2 class="publication_header"> Publications</h2>
+        <div class="publication">
+        <h2>Publications</h2>
+            <ul>
+
+                <li>
+                    <img src="./imgs/afghan_hound_cover.png" alt="Publication 1" width="260">
+                    <p style="font-family: Times New Roman;">
+                    <u>S. Kolek</u>, R. Windesheim, H. Andrade-Loarca, G. Kutyniok, R. Levie. <i>Explaining Image Classifiers with Multiscal Directional Image Representation. </i><b>CVPR 2023</b>
+                    <br><a href="./publications/shearletx_cvpr2023.pdf">PDF</a> | <a href="https://github.com/skmda37/ShearletX">Code</a> 
+                    </p>
+                    
+                </li>
+
+                <li>
+                    <img src="./imgs/diagram_cartoonx.png" alt="Publication 2" width="260">
+                    <p style="font-family: Times New Roman;">
+                    <br>
+                    <br>
+                    <u>S. Kolek</u>, D. Nguyen, R. Levie, J. Bruna, G. Kutyniok. <i>Cartoon Explanations of Image Classifiers. </i><b>ECCV 2022 (Oral)</b>
+                    <br>
+                     <a href="./publications/cartoonx_eccv2022.pdf">PDF</a> | <a href="https://github.com/skmda37/CartoonX">Code</a>
+                    </p>
+                </li>
+            </ul>
+            </div>
+            </section>
+
+</body>
+</html>
+

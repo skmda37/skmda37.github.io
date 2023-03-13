@@ -10,8 +10,8 @@
 		}
 
 		header {
-			background-color: #333;
-			color: white;
+			background-color: white;
+			color: black;
 			text-align: center;
 			padding: 20px;
 		}
@@ -28,11 +28,16 @@
 			height: auto;
 		}
 
-		section {
+		.aboutme {
 			padding: 20px;
 			max-width: 800px;
 			margin: 0 auto;
 		}
+                .publication_header {
+                        padding: 20px;
+                        max-width: 800px;
+                        margin: 0 auto;
+                }
 
 		h2 {
 			font-size: 24px;
@@ -53,46 +58,69 @@
 		li {
 			margin-bottom: 10px;
 		}
+                .my-image {
+                        width: 100%;
+                        height: auto;
+                }
+                .publication {
+                        width: 800px;
+                }
+
+                .publication img {
+                        float: left;
+                            margin-right: 20px;
+                            margin-left: 20px;
+                }
+
 	</style>
 </head>
 <body>
 	<header>
-		<h1>My Name</h1>
+		<h1>Stefan Kolek</h1>
 		<p>Deep Learning Researcher</p>
-		<img src="./imgs/sunrise.png" alt="My painting">
+		<img src="./imgs/test3.png" alt="My painting" class="my-image">
 	</header>
-	<section>
+	<section class='aboutme'>
 		<h2>About Me</h2>
-		<p>Insert your personal information here.</p>
+		<p>Insert your personal information here. I am Stefan Kolek. I am currently doing my PhD at the Ludwig-Maximilians Universit&auml;t M&uuml;nchen. My research is on Interpretable Deep Learning.</p>
 
 		<h2>CV</h2>
 		<ul>
 			<li>Insert your CV items here.</li>
 		</ul>
 
-		<h2>Publications</h2>
-		<ul>
-			<li>Insert your publications here.</li>
-		</ul>
+
+
+        
 	</section>
+        <section>
 
-        <h2>Publications</h2>
-<ul>
-	<li>
-		<img src="publication1.jpg" alt="Publication 1">
-		<h3>Publication 1 Title</h3>
-		<p>Publication 1 description.</p>
-		<p><a href="publication1.pdf">PDF</a> | <a href="publication1_code.zip">Code</a> | <a href="publication1_supp.pdf">Supplementary Material</a></p>
-	</li>
-	<li>
-		<img src="publication2.jpg" alt="Publication 2">
-		<h3>Publication 2 Title</h3>
-		<p>Publication 2 description.</p>
-		<p><a href="publication2.pdf">PDF</a> | <a href="publication2_code.zip">Code</a> | <a href="publication2_supp.pdf">Supplementary Material</a></p>
-	</li>
-	<!-- Add more publications as needed -->
-</ul>
+        <h2 class="publication_header"> Publications</h2>
+        <div class="publication">
+            <ul>
 
+                <li>
+                    <img src="./imgs/afghan_hound_cover.png" alt="Publication 1" width="260">
+                    <p style="font-family: Times New Roman;">
+                    <u>S. Kolek</u>, R. Windesheim, H. Andrade-Loarca, G. Kutyniok, R. Levie. <i>Explaining Image Classifiers with Multiscal Directional Image Representation. </i><b>CVPR 2023</b>
+                    <br><a href="./publications/shearletx_cvpr2023.pdf">PDF</a> | <a href="https://github.com/skmda37/ShearletX">Code</a> 
+                    </p>
+                    
+                </li>
+
+                <li>
+                    <img src="./imgs/diagram_cartoonx.png" alt="Publication 2" width="260">
+                    <p style="font-family: Times New Roman;">
+                    <br>
+                    <br>
+                    <u>S. Kolek</u>, D. Nguyen, R. Levie, J. Bruna, G. Kutyniok. <i>Cartoon Explanations of Image Classifiers. </i><b>ECCV 2022 (Oral)</b>
+                    <br>
+                     <a href="./publications/cartoonx_eccv2022.pdf">PDF</a> | <a href="https://github.com/skmda37/CartoonX">Code</a>
+                    </p>
+                </li>
+            </ul>
+            </div>
+            </section>
 
 </body>
 </html>
