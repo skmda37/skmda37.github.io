@@ -2,9 +2,10 @@
 <html>
 <head>
 	<title>My Personal Website</title>
+        <meta charset="UTF-8">
 	<style>
 		body {
-			font-family: Arial, sans-serif;
+			font-family: Times New Roman, sans-serif;
 			margin: 0;
 			padding: 0;
 		}
@@ -17,7 +18,6 @@
 		}
 
 		h1 {
-			font-size: 36px;
 			margin: 0;
 		}
 
@@ -28,7 +28,7 @@
 			height: auto;
 		}
 
-		.aboutme {
+		.about {
 			padding: 20px;
 			max-width: 800px;
 			margin: 0 auto;
@@ -72,22 +72,73 @@
                             margin-left: 20px;
                 }
 
+
+                #logo {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      margin: 20px;
+                }
+
+                nav {
+                      position: absolute;
+                        top: 0;
+                          right: 0;
+                            margin: 20px;
+                }
+
+                nav ul {
+                      list-style: none;
+                        padding: 0;
+                          margin: 0;
+                }
+
+                nav li {
+                      display: inline-block;
+                        margin-left: 20px;
+                }
+
+                nav a {
+                      text-decoration: none;
+                        color: black;
+                          font-weight: bold;
+                            font-size: 20px;
+                }
+
+
+
 	</style>
 </head>
 <body>
 	<header>
-		<h1>Stefan Kolek</h1>
-		<p>Deep Learning Researcher</p>
-		<img src="./imgs/test3.png" alt="My painting" class="my-image">
-	</header>
-	<section class='aboutme'>
-		<h2>About Me</h2>
-		<p>Insert your personal information here. I am Stefan Kolek. I am currently doing my PhD at the Ludwig-Maximilians Universit&auml;t M&uuml;nchen. My research is on Interpretable Deep Learning.</p>
+            <nav>
+                 <ul>
+                      <li><a href="#about">Bio</a></li>
+                      <li><a href="./cv.pdf">CV</a></li>
+                      <li><a href="#publication">Publications</a></li>
+                </ul>
+            </nav>
 
-		<h2>CV</h2>
-		<ul>
-			<li>Insert your CV items here.</li>
-		</ul>
+
+		<img src="./imgs/me.JPG" width="250" height="300" alt="My Picture">
+                <p><h1>Stefan Kolek</h1> <br>
+                 <b>Email:</b> <a href="mailto:kolek@math.lmu.de" style="font-family: Courier;">kolek@math.lmu.de</a> <br>
+                <a href="./cv.pdf">CV</a> | <a href="https://scholar.google.com/citations?user=7umQNF8AAAAJ&hl=en">Google Scholar</a> | <a href="https://github.com/skmda37">Github</a>
+                </p>
+	</header>
+	<section class='about', id='about'>
+		<h2>Bio</h2>
+                <p>Hey there, I'm Stefan, and this is my personal website. Currently, I'm pursuing a Computer Science PhD at the Ludwig-Maximilians-Universität München, where I'm researching interpretable Deep Learning. My goal is to develop AI models that can explain their decisions at a level comparable to humans (the ones that give really good explanations). While there are practical applications that require explainable decisions, I also believe that Artificial Intelligence should eventually be able to provide explanations as well as the best human explainers, as some people are simply curious and enjoy asking "why." I think explainable AI (XAI) and interpretability research has  many challenges and problems because good explanations are based on semantics and semantics are hard. In my current research, I am trying to bridge the gap to human-level explanations by using the recent advances in generative modeling (e.g. LLMs or Image Synthesis models) to build AI models that base their decisions on interpretable semantics.</p>
+
+                <p><u>Some random things about me that you won't find on my CV</u>:
+                    <ul>
+                        <li> I really like <span style="color: blue;">cities</span> 🌆. My favorites are NYC and Tel Aviv.</li>
+                        <li> I root for the <span style="color: orange;">Knicks</span> 🏀 (even though it has been...painful).</li>
+                        <li> I like dogs &#128021;.</li>
+                    </ul>
+    
+
+                </p>
 
 
 
@@ -95,27 +146,27 @@
 	</section>
         <section>
 
-        <h2 class="publication_header"> Publications</h2>
-        <div class="publication">
+        <h2 class="publication_header", id='publication'>Conference Publications</h2>
+        <div class="publication_header">
             <ul>
 
                 <li>
-                    <img src="./imgs/afghan_hound_cover.png" alt="Publication 1" width="260">
+                    <img src="./imgs/afghan_hound_cover.png" alt="Publication 1" width="260" align="left" style="margin-right: 20px;">
                     <p style="font-family: Times New Roman;">
                     <u>S. Kolek</u>, R. Windesheim, H. Andrade-Loarca, G. Kutyniok, R. Levie. <i>Explaining Image Classifiers with Multiscal Directional Image Representation. </i><b>CVPR 2023</b>
-                    <br><a href="./publications/shearletx_cvpr2023.pdf">PDF</a> | <a href="https://github.com/skmda37/ShearletX">Code</a> 
+                    <br><a href="https://arxiv.org/pdf/2211.12857.pdf">PDF</a> | <a href="https://github.com/skmda37/ShearletX">Code</a> 
                     </p>
                     
                 </li>
 
                 <li>
-                    <img src="./imgs/diagram_cartoonx.png" alt="Publication 2" width="260">
+                    <img src="./imgs/diagram_cartoonx.png" alt="Publication 2" width="260" align="left" style="margin-right: 20px;">
                     <p style="font-family: Times New Roman;">
                     <br>
                     <br>
                     <u>S. Kolek</u>, D. Nguyen, R. Levie, J. Bruna, G. Kutyniok. <i>Cartoon Explanations of Image Classifiers. </i><b>ECCV 2022 (Oral)</b>
                     <br>
-                     <a href="./publications/cartoonx_eccv2022.pdf">PDF</a> | <a href="https://github.com/skmda37/CartoonX">Code</a>
+                     <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136720439.pdf">PDF</a> | <a href="https://github.com/skmda37/CartoonX">Code</a>
                     </p>
                 </li>
             </ul>
