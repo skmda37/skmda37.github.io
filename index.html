@@ -1,217 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>My Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <style>
-        body {
-            font-family: Times New Roman, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
+    .purple-wordart-wrapper {
+        background: linear-gradient(183deg, #ff9f06 10%, #ff0606 70%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-family: 'Impact';
+        transform: skewY(-8deg) scaleY(1.3) scaleX(0.8);
+        display: inline-block;
+    }
+    .wordart-wrapper {
+        filter: drop-shadow(2px 2px 0px rgba(130, 140, 251, 0.8));
+    }
+    a:hover {
+      color: hotpink;
+      background-color: yellow;
+    }
+    a {
+        text-decoration: none; 
+        color: black; 
+    }
+    .highlight {
+      color: blue;
+      font-weight: bold;
+    }
 
-        header {
-            background-color: white;
-            color: black;
-            text-align: center;
-            padding: 20px;
-        }
+    .no-bullet-style{
+        list-style-type:none; 
+        padding: 0;
+    }
 
-        h1 {
-            margin: 0;
-        }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
-        }
+    </style>
+  </head>
+  <body>
+    <main>
+        <h1>
+        <span class="purple-wordart-wrapper">
+            <span class="purple-wordart">Stefan Kolek</span>
+        </span>
+        </h1>
+        <img src="imgs/me.jpg" width="100" height="345">
+        <p><a href= "mailto:kolek@math.lmu.de">kolek@math.lmu.de</a> &middot Munich, Germany</p>
 
-        .about {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .publication_header {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin-top: 0;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .my-image {
-            width: 100%;
-            height: auto;
-        }
-
-        .publication {
-            width: 800px;
-        }
-
-        .publication img {
-            float: left;
-            margin-right: 20px;
-            margin-left: 20px;
-        }
-
-        #logo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin: 20px;
-        }
-
-        nav {
-            position: absolute;
-            top: 0;
-            right: 0;
-            margin: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        
-
+        <!--<img src="imgs/cap.jpg" width="100" height="345">-->
+        <hr>
+        <h2>Education</h2>
+        <ul class="no-bullet-style">
+            <li><a class="highlight" href="">2021-2025 PhD Computer Science</a> 
+                <ul class="no-bullet-style">
+                    <li>Ludwig-Maximilians-Universität München, Germany</li>
+                    <li>Title: <i>Sparse Representation Methods for Explainable Image Classification</i></li>
+                </ul>
+            </li>
+            <li><a class="highlight" href="">2018-2021 MS Mathematics</a> 
+                <ul class="no-bullet-style">
+                    <li>Technische Universität Berlin, Germany</li>
+                </ul>
+            </li>
+            <li><a class="highlight" href="">2015-2018 BS Mathematics</a> 
+                <ul class="no-bullet-style">
+                    <li>Ludwig-Maximilians-Universität München, Germany</li>
+                </ul>
+            </li>
             
-        </style>
-            
-</head>
+        </ul>
 
-<body>
-    <header>
-        <img src="./imgs/me.JPG" width="250" height="300" alt="My Picture">
-        <p>
-            <h1>Stefan Kolek</h1> <br>
-            <b>Email:</b> <a href="mailto:kolek@math.lmu.de" style="font-family: Courier;">kolek@math.lmu.de</a> <br>
-            <a href="./cv.pdf">CV</a> | <a href="https://scholar.google.com/citations?user=7umQNF8AAAAJ&hl=en">Google
-                Scholar</a> | <a href="https://github.com/skmda37">Github</a>
-        </p>
-    </header>
-    <section class='about' id='about'>
-        <h2>A Little About Me</h2>
-        <p>
-            Hi, I'm Stefan, welcome to my personal website! Currently, I'm a Computer Science Ph.D. student at
-            Ludwig-Maximilians-University Munich. Previously I studied Math at TU Berlin (master) and LMU Munich (undergrad). My research focuses on trustworthy machine learning, particularly Explainable AI and Differentially Private Machine Learning.
-        </p>
-    </section>
-    <section>
-        <h2 class="publication_header" id='publication'>Selected Publications</h2>
-        <div class="publication_header">
-            <ul>
+        <hr>
+        <h2>Open Source</h2>
+            <ul style="list-style-type:circle;">
                 <li>
-                    <img src="./imgs/delta_div.png" alt="Publication 4" width="260" height="100" align="left"
-                        style="margin-right: 20px;">
-                    <p style="font-family: Times New Roman;">
-                        G. Kaissis*, <u><b>S. Kolek*</b></u>, B. Balle, J. Hayes, D. Rückert. <i>Beyond the Calibration Point: Mechanism Comparison in Differential Privacy. </i><b>ICML 2024</b> <br><a
-                            href="https://arxiv.org/pdf/2406.08918">PDF</a> 
-                    </p>
+                    <a class="highlight" href="https://github.com/skmda37/CartoonX">CartoonX</a>: A wavelet-based post-hoc explanation method for image classifiers. CartoonX visualizes the piece-wise smooth relevant part of an image after optimizing a sparse mask in the wavelet domain of the image to minimize the distortion in the classifier's output.
                 </li>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
                 <li>
-                    <img src="./imgs/figure_optimal_privacy.png" alt="Publication 3" width="260" height="100" align="left"
-                        style="margin-right: 20px;">
-                    <p style="font-family: Times New Roman;">
-                        G. Kaissis, A. Ziller, <u><b>S. Kolek</b></u>, A. Riess, D. Rückert. <i>Optimal privacy guarantees for a relaxed threat model:
-                            Addressing sub-optimal adversaries in differentially
-                            private machine learning. </i><b>NeurIPS 2023</b> <br><a
-                            href="https://openreview.net/pdf?id=BRSgVw85Mc">PDF</a> 
-                    </p>
-                </li>
-                <br>
-                <br>
-                <br>
-                <br>
-                <li>
-                    <img src="./imgs/shearletx_three_examples.png" alt="Publication 2" width="260" align="left"
-                        style="margin-right: 20px;">
-                    <p style="font-family: Times New Roman;">
-                        <u><b>S. Kolek</b></u>, R. Windesheim, H. Andrade-Loarca, G. Kutyniok, R. Levie. <i>Explaining Image
-                            Classifiers with Multiscal Directional Image Representation. </i><b>CVPR 2023</b> <br><a
-                            href="https://arxiv.org/pdf/2211.12857.pdf">PDF</a> | <a
-                            href="https://github.com/skmda37/ShearletX">Code</a>
-                    </p>
-                </li>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <li>
-                    <img src="./imgs/diagram_cartoonx.png" alt="Publication 1" width="260" align="left"
-                        style="margin-right: 20px;">
-                    <p style="font-family: Times New Roman;">
-                        <br>
-                        <br>
-                        <u><b>S. Kolek</b></u>, D. Nguyen, R. Levie, J. Bruna, G. Kutyniok. <i>Cartoon Explanations of Image
-                            Classifiers. </i><b>ECCV 2022 (Oral)</b> <br> <a
-                            href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136720439.pdf">PDF</a> |
-                        <a href="https://github.com/skmda37/CartoonX">Code</a>
-                    </p>
+                    <a class="highlight" href="https://github.com/skmda37/query_learning_vip">Query Dictionary Learning for V-IP</a>: An optimization algorithm to train Variational Information Pursuit (V-IP), a recently introduced a recently introduced learning framework to construct classifiers that are interpretable by-design, with a learned query dictionary.
                 </li>
             </ul>
-        </div>
-        <br>
-    </section>
-    <section class='about' id='about'>
-        <h2>Say Hi</h2>
-        <p>
-            Reach out and say hi if you are interested in my research or working together:  <a href="mailto:kolek@math.lmu.de" style="font-family: Courier;">kolek@math.lmu.de</a> 
-        </p>
-    </section>
+        <hr>
+        <h2>Publications</h2>
+        <ul style="list-style-type:circle;">
+            <li><a class="highlight" href="https://arxiv.org/pdf/2312.11548">Learning Interpretable Queries for Explainable Image Classification with
+Information Pursuit.</a>
+                <ul class="no-bullet-style">
+                    <li>
+                        S. Kolek, A. Chattopadhyay, K. Chan, H. Andrade-Loarca, G. Kutyniok, R. Vidal. ICCV 2025.
+                    </li>
+                </ul>
+            </li>
+            <li><a class="highlight" href="https://arxiv.org/pdf/2406.08918">Beyond the Calibration Point: Mechanism Comparison in Differential Privacy.</a> 
+                <ul class="no-bullet-style">
+                    <li>
+                        G. Kaissis*, S. Kolek*, B. Balle, J. Hayes, D. Rückert. ICML 2024.
+                    </li>
+                </ul>
+            </li>
+            <li><a class="highlight" href="https://openreview.net/pdf?id=BRSgVw85Mc">Optimal privacy guarantees for a relaxed threat model:
+Addressing sub-optimal adversaries in differentially
+private machine learning.</a> 
+                <ul class="no-bullet-style">
+                    <li>
+                        G. Kaissis, A. Ziller, S. Kolek, A. Riess, D. Rückert. NeurIPS 2023.
+                    </li>
+                </ul>
+            </li>
+            <li><a class="highlight" href="https://arxiv.org/pdf/2211.12857">Explaining Image Classifiers with Multiscale Directional Image Representation.</a> 
+                <ul class="no-bullet-style">
+                    <li>
+                        S. Kolek, R. Windesheim, H. Andrade-Loarca, G. Kutyniok, R. Levie. CVPR 2023.
+                    </li>
+                </ul>
+            </li>
+            <li><a class="highlight" href="https://arxiv.org/pdf/2110.03485">Cartoon Explanation of Image Classifiers.</a> 
+                <ul class="no-bullet-style">
+                    <li>
+                        S. Kolek, D. Nguyen, R. Levie, J. Bruna, G. Kutyniok. ECCV 2022 (Oral).
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
-    
-    
-    
-    
-    
-    
-    
-</body>
+        <hr>
+        <h2>Personal Interests</h2>
+        Books, Capoeira, Good Company, Language Learning, Photography, Pizza
+        <hr>
+        <div> Copyright &copy 2022-<span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>, Stefan Kolek</div>
 
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
