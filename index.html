@@ -53,12 +53,12 @@
         </span>
         </h1>
         <img src="imgs/me.JPG" width="100" height="345">
-        <p><a href= "mailto:kolek@math.lmu.de">kolek@math.lmu.de</a> &middot Munich, Germany</p>
+        <p>Munich, Germany &middot <a href= "mailto:kolek@math.lmu.de">kolek@math.lmu.de</a> &middot <a href="cv.pdf" download>CV</a> &middot <a href= "github.com/skmda37">GitHub</a></p>
 
         <hr>
         <h2>Education</h2>
         <ul class="no-bullet-style">
-            <li><a class="highlight" href="">2021-2025 PhD Computer Science</a> 
+            <li><a class="highlight" href="">2021-now PhD Computer Science</a> 
                 <ul class="no-bullet-style">
                     <li>Ludwig-Maximilians-Universität München, Germany</li>
                     <li>Title: <i>Sparse Representation Methods for Explainable Image Classification</i></li>
@@ -81,11 +81,21 @@
         <h2>Open Source</h2>
             <ul style="list-style-type:circle;">
                 <li>
-                    <a class="highlight" href="https://github.com/skmda37/CartoonX">Cartoon Explanations of Image Classifiers</a>: A wavelet-based post-hoc explanation method for image classifiers. CartoonX visualizes the piece-wise smooth relevant part of an image after optimizing a sparse mask in the wavelet domain of the image to minimize the distortion in the classifier's output.
+                    <a class="highlight" href="https://github.com/skmda37/CartoonX">CartoonX</a>
+                    <ul class="no-bullet-style">
+                        <li>
+                            Understanding the decisions of deep image classifiers can be challenging. CartoonX is a explainability map method that learns sparsity dirven masks directly on the wavelet/shearlet coefficients to maximize target class probability. The visual explanation extracts the relevant piece-wise smooth (cartoon) part of an image.
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a class="highlight" href="https://github.com/skmda37/query_dictionary_learning">Query Dictionary Learning for Information Pursuit</a>: An optimization algorithm to train Variational Information Pursuit (V-IP), a recently introduced a recently introduced learning framework to construct classifiers that are interpretable by-design, with a learned query dictionary.
-                </li>
+                    <a class="highlight" href="">BigFile</a>
+                    <ul class="no-bullet-style">
+                        <li>
+                            Many large datasets do not fit into RAM and consist of millions of compressed files which greatly slow down the dataloader during training. I built a general Python utility to transform the dataset from RAM to a single binary file with merged gzip streams. It is fully compatible with torch.utils.data.Dataset and is up to 4X faster than standard ImageNet dataloaders.
+                        </li>
+                    </ul> 
+                </lli>
             </ul>
         <hr>
         <h2>Publications</h2>
